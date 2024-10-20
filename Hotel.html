@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+    <title>Anchor Inn</title>
+    <link rel="stylesheet" href="./Hotel.css">
+    <link rel="stylesheet" href="./css/all.css">
+</head>
+
+<body>
+    <section class="navigation">
+        <div class="main-nav">
+            <img src="./image/marylia17161200005.jpg" alt="" width="120px">
+            <div class="sub-slide">
+                <span class="open-slide">
+                    <a href="#" onclick="openslidemenue()">
+                        <svg width="30" height="30">
+                            <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                            <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                            <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+                        </svg>
+                    </a>
+                </span>
+            </div>
+            <div id="side-menue" class="side-nav">
+                <ul>
+                    <li><a href="#" class="btn-close" onclick="closeslidemenu();">&times;</a></li>
+                    <li><a href="Hotel.html">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="nav">
+                <ul class="nav-links">
+                    <li><a href="#" class="current">Home</a></li>
+                    <li><a href="#">Rooms</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Latest News</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="search">
+                <span class="social">
+                    <a href="#"> <i class="fab fa-facebook"></i></a>
+                    <a href="#"> <i class="fab fa-twitter"></i></a>
+                    <a href="#"> <i class="fab fa-instagram"></i></a>
+                    <a href="#"> <i class="fab fa-dribbble"></i></a>
+                </span>
+                <span class="search-box">
+                    <input class="search-text" type="search" placeholder="Search...">
+                    <a href="#" class="search-btn"><i class="fas fa-search"></i></a>
+                </span>
+
+            </div>
+        </div>
+        <div class="adress">
+            <h4>
+                Adress: 156 University Ave.Bonsaac,Asaba. Reservation Line: +2348-069-538-087</h4>
+        </div>
+    </section>
+    <section class="image">
+        <div class="slideshow-container">
+            <div class="slides fade">
+                <p></p>
+                <div class="number">$259 </div>
+                <div><img src="./image/pexels-photo-1743231.jpeg" alt="" width="100%" height="700px"></div>
+                <div class="text"> <span> luxurious single room </span>
+                    <h3>Starting at $259</h3>
+                </div>
+            </div>
+            <div class="slides">
+                <div class="number">View</div>
+                <div><img src="./image/pexels-photo-381541.jpeg" alt="" width="100%" height="700px"></div>
+                <div class="text">Outer View</div>
+            </div>
+            <div class="slides">
+                <div class="number">Pool </div>
+                <div><img src="./image/pexels-photo-261101.jpeg" alt="" width="100%" height="700px"></div>
+                <div class="text">Exclusive Swimming Pool</div>
+            </div>
+            <div class="slides">
+                <div class="number">Hall</div>
+                <div><img src="./image/pexels-photo-2507010.jpeg" alt="" width="100%" height="700px"></div>
+                <div class="text">Reception / Guest Hall</div>
+            </div>
+
+            <a href="#" class="prev" onclick="plusIndex(-1)">&#10094;</a>
+            <a href="#" class="next" onclick="plusIndex(+1)">&#10095;</a>
+        </div>
+        <br>
+
+        <div class="Dot">
+            <span class="dots" onclick="currentSlide(1)"></span>
+            <span class="dots" onclick="currentSlide(2)"></span>
+            <span class="dots" onclick="currentSlide(3)"></span>
+            <span class="dots" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+    <section class="Reservation">
+        <h2>MAKE A RESERVATION</h2>
+        <hr>
+        <form>
+            <select name="">
+                <option class="select-room" selected="selected">Select Room</option>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+            </select>&nbsp;&nbsp;
+            <span class="arrival">
+                <input type="text" id="Arrival" placeholder="Arrival">
+                <i class="fas fa-calendar-alt"></i>
+                <!--<span class="glyphicon glyphicon-calendar"></span> -->
+            </span>
+
+            <span class="Departure">
+                <input type="text" id="Departure" placeholder="Departure">
+                <i class="fas fa-calendar-alt"></i>
+                <!-- <span class="glyphicon glyphicon-calendar"></span> -->
+            </span>
+
+            <select name="" class="Adult">
+                <option value="" selected="selected">Adult(18+)</option>
+                <option value="">18 - 25</option>
+                <option value="">26 - 30</option>
+                <option value="">31 - 35</option>
+            </select>
+            <select name="" class="Child">
+                <option value="" selected="selected">Child(0-17)</option>
+                <option value="">17 - 15</option>
+                <option value="">14 - 10</option>
+                <option value="">9 - 5</option>
+            </select>
+            <input class="email" type="email" value="" placeholder="Email Address">
+            <input class="submit" type="submit" value="Book Now">
+        </form>
+    </section>
+    <section class="featured-packages">
+        <h2>FEATURED PACKAGES</h2>
+        <hr>
+        <div class="Rooms">
+            <div class="single-room">
+                <img src="./image/pexels-photo-164595.jpeg" alt="">
+                <h4>Single Room</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat vitae, maxime libero est, magnam nostrum dignissimos doloribus modi repellat, facere a vel repellendus repudiandae eos.</p>
+                <li><a href="#">More Information</a></li>
+            </div>
+            <div class="double-room">
+                <img src="./image/pexels-photo-271624.jpeg" alt="">
+                <h4>Double Room</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat vitae, maxime libero est, magnam nostrum dignissimos doloribus modi repellat, facere a vel repellendus repudiandae eos.</p>
+                <li> <a href="#">More Information</a></li>
+            </div>
+            <div class="deluxe-suite">
+                <img src="./image/pexels-photo-1579253.jpeg" alt="">
+                <h4>Deluxe-Suite</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat vitae, maxime libero est, magnam nostrum dignissimos doloribus modi repellat, facere a vel repellendus repudiandae eos.</p>
+                <li> <a href="#">More Information</a></li>
+            </div>
+        </div>
+    </section>
+    <section class="site-info">
+        <div class="our-mission">
+            <h3>OUR MISSION</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae ea aperiam architecto excepturi ullam consequuntur.</p>
+        </div>
+        <div class="map">
+            <h3>SITE MAP</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Entries RSS</a></li>
+                <li><a href="#">Comments RSS</a></li>
+                <li><a href="#">WordPress.org</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="booking">
+            <h3>BOOKING</h3>
+            <h5>Anchor Inn</h5>
+            <p>Desk: +234-806-9538-087</p>
+            <p>HotLine: +234-090-3600-3626</p>
+            <a href="#">Godstimeakpoyibo@gmail.com</a>
+        </div>
+        <div class="newsletter">
+            <h3>NEWSLETTER</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa dolores, reprehenderit blanditiis iure! Non, nobis.</p>
+            Email Address <br><input type="email"><button class="btn">Subscribe</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2019 Rights Reserved. Developed by <a href="#">Gbest WebWord.com</a></p>
+        <span class="social">
+
+            <a href="#"> <i class="fab fa-facebook"></i></a>
+            <a href="#"> <i class="fab fa-twitter"></i></a>
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+            <a href="#"> <i class="fab fa-dribbble"></i></a>
+        </span>
+    </footer>
+</body>
+<script src="Hotel.js"></script>
+
+</html>
